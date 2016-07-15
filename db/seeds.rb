@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# runs=Run.create(start_time: '', distance:'', end_time: '')
+# Run.Update( current id )
+# retunr the created time and teh udpated time subtract them return the time
