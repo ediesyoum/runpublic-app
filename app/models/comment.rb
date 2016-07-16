@@ -1,3 +1,3 @@
 class Comment < ApplicationRecord
-    belongs_to :run
+  belongs_to :run
 end

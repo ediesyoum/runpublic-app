@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: MyString
+  start_time: 2016-07-16 12:12:32
   distance: 1.5
-  timer: MyString
+  end_time: 2016-07-16 12:12:32
 
 two:
-  date: MyString
+  start_time: 2016-07-16 12:12:32
   distance: 1.5
-  timer: MyString
+  end_time: 2016-07-16 12:12:32

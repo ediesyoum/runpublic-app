@@ -10,22 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160714222947) do
+ActiveRecord::Schema.define(version: 20160716161238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
+    t.integer  "run_id"
     t.string   "name"
-    t.string   "body"
+    t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["run_id"], name: "index_comments_on_run_id", using: :btree
   end
 
   create_table "runs", force: :cascade do |t|
     t.datetime "start_time"
     t.float    "distance"
     t.datetime "end_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "comments", "runs"
 end
