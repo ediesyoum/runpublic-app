@@ -1,0 +1,19 @@
+<%= form_for @run do |f| %>
+  <div class="input-field col s6">
+    <%= f.label :start_time, 'Start time'%>
+    <%= f.text_field :start_time%>
+  </div>
+  <div class="input-field col s6">
+    <%= f.label :distance, 'Distance' %>
+    <%= f.text_field :distance %>
+  </div>
+  <div class="input-field col s6">
+    <%= f.label :end_time, 'End time' %>
+    <%= f.text_field :end_time %>
+  </div>
+  <div class="input-field col s6">
+    <%= f.label :hometown, 'Total time' %>
+    <%= f.text_field :hometown %>
+  </div>
+  <%= f.submit "Submit", :class => "btn waves-effect waves-light" %>
+<% end %>

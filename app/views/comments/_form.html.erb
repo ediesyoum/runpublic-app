@@ -1,0 +1,12 @@
+<%= form_for @comment do |f| %>
+  <%= f.hidden_field :run_id, :value => @run.id %>
+  <div class="input-field col s6">
+    <%= f.label :title, 'Title' %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="input-field col s6">
+    <%= f.label :body, 'Your comment' %>
+    <%= f.text_field :body %>
+  </div>
+  <%= f.submit "Submit", :class => "btn waves-effect waves-light" %>
+<% end %>
