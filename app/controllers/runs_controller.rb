@@ -10,8 +10,8 @@ class RunsController < ApplicationController
   end
 
   def new
-    # puts request.params
-    # @comment = Comment.find(params[:comment_id])
+    puts request.params
+    @comment = Comment.find(params[:comment_id])
     @run = Run.new
   end
 
@@ -21,22 +21,22 @@ class RunsController < ApplicationController
     redirect_to runs_path
   end
 
-def edit
-@run = Run.find(params[:id])
-end
+  def edit
+    @run = Run.find(params[:id])
+  end
 
-def update
-  run = Run.find(params[:id])
-  run.update_attributes(params.require(:start_time).permit(:distance, :end_time))
+  def update
+    run = Run.find(params[:id])
+    run.update_attributes(params.require(:start_time).permit(:distance, :end_time))
 
-  redirect_to run
-end
+    redirect_to run
+  end
 
-def destroy
-  @run = Run.find(params[:id])
-  @run.destroy
+  def destroy
+    @run = Run.find(params[:id])
+    @run.destroy
 
-  redirect_to runs_path
-end
+    redirect_to runs_path
+  end
 
 end

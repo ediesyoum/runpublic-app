@@ -7,16 +7,16 @@ Rails.application.routes.draw do
 
   get "runs/:id", to: "runs#show", as: :run
 
-post "runs", to: "runs#create"
+  post "runs", to: "runs#create"
 
-get "runs/:id/edit", to: "runs#edit", as: :run_edit
+  get "runs/:id/edit", to: "runs#edit", as: :run_edit
 
-patch "runs/:id", to: "runs#update"
+  patch "runs/:id", to: "runs#update"
 
-delete "runs/:id", to: "runs#destroy"
+  delete "runs/:id", to: "runs#destroy"
 
-get "comments/new", to: "comments#new"
+  get "comments/new", to: "comments#new"
 
-post "comments", to: "comments#create"
+  post "comments", to: "comments#create"
 
 end
