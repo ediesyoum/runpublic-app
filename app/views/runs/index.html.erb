@@ -13,8 +13,9 @@
       <th>Stop Time</th>
       <th>Total Run Time</th>
     </tr>
+  </table>
 
-    <tr>
+  <table class="striped bordered">
       <% @runs.each do |run| %>
         <%= link_to run_url(run) do %>
         <td><%= run[:id] %></td>
