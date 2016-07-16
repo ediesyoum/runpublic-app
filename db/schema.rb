@@ -23,11 +23,9 @@ ActiveRecord::Schema.define(version: 20160714222947) do
   end
 
   create_table "runs", force: :cascade do |t|
-    t.string   "date"
+    t.datetime "start_time"
     t.float    "distance"
-    t.string   "timer"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "end_time"
   end
 
 end
