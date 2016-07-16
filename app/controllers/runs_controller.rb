@@ -5,8 +5,8 @@ class RunsController < ApplicationController
   end
 
   def show
-    @run = Run.find(params[:id])
-    @comments = @run.comments
+    @run = Run.new
+    # @comments = @run.comments
   end
 
   def new

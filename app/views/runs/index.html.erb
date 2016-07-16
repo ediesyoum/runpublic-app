@@ -7,22 +7,24 @@
 
   <table class="striped bordered">
     <tr>
-      <th>Date</th>
+      <th>Run ID</th>
       <th>Start Time</th>
       <th>Distance</th>
       <th>Stop Time</th>
       <th>Total Run Time</th>
+      <th>Edit</th>
+      <th>Delete</th>
     </tr>
-  </table>
 
-  <table class="striped bordered">
+
       <% @runs.each do |run| %>
         <%= link_to run_url(run) do %>
-        <td><%= run[:id] %></td>
-        <td><%= run.start_time %></td>
-        <td><%= run.distance %></td>
-        <td><%= run.end_time %></td>
-        <td></td>
+          <tr>
+          <td><%=run[:id]%></td>
+          <td><%=run.start_time%></td>
+          <td><%=run.distance%></td>
+          <td><%=run.end_time %></td>
+          <td><%= run.end_time - run.start_time %></td>
         <% end %>
       <% end %>
     </tr>
