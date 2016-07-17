@@ -1,3 +1,15 @@
-<h1>New Run</h1>
-
-<%= render 'runs/_form' %>
+<%= form_for @run do |f| %>
+  <div class="input-field col s6">
+    <%= f.label :start_time, 'Name'%>
+    <%= f.text_field :start_time%>
+  </div>
+  <div class="input-field col s6">
+    <%= f.label :distance, 'Albums' %>
+    <%= f.text_field :distance %>
+  </div>
+  <div class="input-field col s6">
+    <%= f.label :end_time, 'Hometown' %>
+    <%= f.text_field :end_time %>
+  </div>
+  <%= f.submit "Submit", :class => "btn waves-effect waves-light" %>
+<% end %>

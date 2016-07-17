@@ -10,9 +10,15 @@ class RunsController < ApplicationController
   end
 
   def new
+<<<<<<< HEAD
     # puts request.params
     # @comment = Comment.find(params[:comment_id])
     # @run = Run.new
+=======
+    puts request.params
+    @comment = Comment.find(params[:comment_id])
+    @run = Run.new
+>>>>>>> ad9b0737825d0cc268fe285640b99fb49ca616e3
   end
 
   def create
