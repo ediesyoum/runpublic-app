@@ -1,4 +1,4 @@
-class CommentsController < ApplicationController
+class CommentsController < RunsControllers
 
   def new
     puts request.params

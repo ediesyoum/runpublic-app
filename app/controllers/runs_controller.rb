@@ -6,19 +6,20 @@ class RunsController < ApplicationController
 
   def show
     @run = Run.find(params[:id])
-    @comments = @run.comments
+    # @comments = @run.comments
   end
 
   def new
-    puts request.params
-    @comment = Comment.find(params[:comment_id])
+    # puts request.params
     @run = Run.new
+    # @comment = Comment.find(params[:comment_id])
+    redirect_to new_run_path
   end
 
   def create
     @run = Run.new(params.require(:start_time).permit(:distance, :end_time))
     @run.save
-    redirect_to runs_path
+    redirect_to new_runs_path
   end
 
   def edit
