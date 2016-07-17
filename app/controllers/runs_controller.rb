@@ -10,8 +10,8 @@ class RunsController < ApplicationController
   end
 
   def new
-    # puts request.params
-    # @comment = Comment.find(params[:comment_id])
+    puts request.params
+    @comment = Comment.find(params[:comment_id])
     @run = Run.new
   end
 

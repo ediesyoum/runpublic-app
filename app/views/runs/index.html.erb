@@ -2,7 +2,7 @@
 
 <table class="striped bordered">
   <div>
-  <%= link_to "Add your Run", runs_path , { :class => "button waves-effect waves-light btn" } %>
+  <%= link_to "Add your Run", runs_new_path, { :class => "button waves-effect waves-light btn" } %>
   </div>
 
   <table class="striped bordered">
@@ -15,11 +15,7 @@
     </tr>
   </table>
 
-<<<<<<< HEAD
-
-=======
   <table class="striped bordered">
->>>>>>> 1202f0df6685b041101d0c7a4ae0d6397c54a369
       <% @runs.each do |run| %>
         <%= link_to run_url(run) do %>
           <tr>
@@ -27,7 +23,7 @@
           <td><%=run.start_time%></td>
           <td><%=run.distance%></td>
           <td><%=run.end_time %></td>
-          <td><%=run.end_time - run.start_time %></td>
+          <td><%=run.end_time.hour - run.start_time.hour%>hr <%=run.end_time.min-run.start_time.min%>min <%=run.end_time.min - run.start_time.min%>sec</td>
         <% end %>
       <% end %>
     </tr>
