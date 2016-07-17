@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get "runs/:id", to: "runs#show", as: :run
 
-  post "runs/new", to: "runs#create"
+  get "runs/new", to: "runs#create"
 
   get "runs/:id/edit", to: "runs#edit", as: :run_edit
 

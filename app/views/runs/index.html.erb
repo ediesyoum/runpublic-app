@@ -1,0 +1,33 @@
+<h2>This is the runs index page</h2>
+
+<table class="striped bordered">
+  <div>
+  <%= link_to "Add your Run", runs_new_path , { :class => "button waves-effect waves-light btn" } %>
+  </div>
+
+  <table class="striped bordered">
+    <tr>
+      <th>Run ID</th>
+      <th>Start Time</th>
+      <th>Distance</th>
+      <th>Stop Time</th>
+      <th>Total Run Time</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+
+  <table class="striped bordered">
+
+      <% @runs.each do |run| %>
+        <%= link_to run_url(run) do %>
+          <tr>
+          <td><%=run[:id]%></td>
+          <td><%=run.start_time%></td>
+          <td><%=run.distance%></td>
+          <td><%=run.end_time %></td>
+
+          </tr>
+        <% end %>
+      <% end %>
+
+  </table>

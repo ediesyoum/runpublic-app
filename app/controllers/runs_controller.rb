@@ -12,7 +12,7 @@ class RunsController < ApplicationController
   def new
     # puts request.params
     # @comment = Comment.find(params[:comment_id])
-    @run = Run.new
+    # @run = Run.new
   end
 
   def create
