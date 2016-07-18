@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>All Runs</h1>
 <<<<<<< HEAD
 <%= link_to "New Run", new_run_path(:run_id => @run[:id]), { :class => "button waves-effect waves-light btn" } %>
@@ -14,3 +15,34 @@
       </div>
   <% end %>
 </div>
+=======
+<h1>Run <%=@run.id%></h1>
+
+
+        <div class="card-panel grey lighten-2 col s4" style="margin: 10px">
+          <tr><h4>Run Details</h4></tr><br/><br/>
+          <tr>Run ID: <%=@run[:id]%></tr><br/><br/>
+          <tr>Start Time: <%=@run.start_time%></tr><br/><br/>
+          <tr>Distance: <%=@run.distance%></tr><br/><br/>
+          <tr>End Time: <%=@run.end_time%></tr><br/><br/>
+          <tr>Total Run Time: <%=@run.end_time.hour - @run.start_time.hour%>hr <%=@run.end_time.min-@run.start_time.min%>min <%=@run.end_time.min - @run.start_time.min%>sec</tr>
+        </div><br/><br/><br/>
+
+<h2>Comments...</h2>
+
+<table class="striped bordered">
+  <tr>
+    <th>COMMENT ID</th>
+    <th>NAME</th>
+    <th>BODY</th>
+  </tr>
+     <% @run.comments.each do |comment| %>
+     <tr>
+       <th><%=comment[:id]%></th>
+       <th><%=comment[:name]%></th>
+       <th><%=comment[:body]%></th>
+       </tr>
+     <% end %>
+
+ </table>
+>>>>>>> faf230fa3390b8da1322bb87bc7e1d1665662174
