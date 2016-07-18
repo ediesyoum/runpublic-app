@@ -2,40 +2,20 @@
 
 <table class="striped bordered">
   <div>
-<<<<<<< HEAD
-  <%= link_to "Add your Run", runs_new_path , { :class => "button waves-effect waves-light btn" } %>
-=======
   <%= link_to "Add your Run", runs_new_path, { :class => "button waves-effect waves-light btn" } %>
->>>>>>> ad9b0737825d0cc268fe285640b99fb49ca616e3
   </div>
 
   <table class="striped bordered">
     <tr>
-<<<<<<< HEAD
-      <th>Run ID</th>
-      <th>Start Time</th>
-      <th>Distance</th>
-      <th>Stop Time</th>
-      <th>Total Run Time</th>
-      <th>Edit</th>
-      <th>Delete</th>
-=======
       <th>RUN ID</th>
       <th>START TIME</th>
       <th>DISTANCE</th>
       <th>STOP TIME</th>
       <th>TOTAL RUN TIME</th>
->>>>>>> faf230fa3390b8da1322bb87bc7e1d1665662174
     </tr>
-<<<<<<< HEAD
-
-  <table class="striped bordered">
-
-=======
   </table>
 
   <table class="striped bordered">
->>>>>>> ad9b0737825d0cc268fe285640b99fb49ca616e3
       <% @runs.each do |run| %>
         <%= link_to run_url(run) do %>
           <tr>
@@ -43,13 +23,8 @@
           <td><%=run.start_time%></td>
           <td><%=run.distance%></td>
           <td><%=run.end_time %></td>
-<<<<<<< HEAD
-
-          </tr>
-=======
           <td><%=run.end_time.hour - run.start_time.hour%>hr <%=run.end_time.min-run.start_time.min%>min <%=run.end_time.min - run.start_time.min%>sec</td>
->>>>>>> ad9b0737825d0cc268fe285640b99fb49ca616e3
         <% end %>
       <% end %>
-
+    </tr>
   </table>

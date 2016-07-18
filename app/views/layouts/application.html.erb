@@ -6,18 +6,21 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+
     <nav class="grey darken-4" role="navigation">
-  <div class="nav-wrapper container">
-    <h5>Runpublic App</h5>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
-<div class="container">
-  <div class="col s12">
-    <%= yield %>
-  </div>
-</div>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div class="nav-wrapper container">
+        <h5><a href="/">Runpublic App</a></h5>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col s12">
+        <%= yield %>
+        <h5 align="center">Recent records</h5><br/>
+      </div>
+    </div>
+
   </body>
 </html>

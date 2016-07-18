@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-<h1>All Runs</h1>
-<<<<<<< HEAD
-<%= link_to "New Run", new_run_path(:run_id => @run[:id]), { :class => "button waves-effect waves-light btn" } %>
-=======
-<%= link_to "New Run", runs_new_path(:run_id => @run.id), { :class => "button waves-effect waves-light btn" } %>
->>>>>>> ad9b0737825d0cc268fe285640b99fb49ca616e3
-<br><br>
-
-<div class="row">
-  <% @comments.each do |comment| %>
-
-      <div class="card-panel grey lighten-2 col s4" style="margin: 10px">
-        <strong><%= link_to comment.name %></strong>
-      </div>
-  <% end %>
-</div>
-=======
 <h1>Run <%=@run.id%></h1>
 
 
@@ -45,4 +27,3 @@
      <% end %>
 
  </table>
->>>>>>> faf230fa3390b8da1322bb87bc7e1d1665662174
