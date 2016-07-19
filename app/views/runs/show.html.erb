@@ -1,14 +1,14 @@
 <h1>Run <%=@run.id%></h1>
 
 
-        <div class="card-panel grey lighten-2 col s4" style="margin: 10px">
-          <tr><h4>Run Details</h4></tr><br/><br/>
-          <tr>Run ID: <%=@run[:id]%></tr><br/><br/>
-          <tr>Start Time: <%=@run.start_time%></tr><br/><br/>
-          <tr>Distance: <%=@run.distance%></tr><br/><br/>
-          <tr>End Time: <%=@run.end_time%></tr><br/><br/>
-          <tr>Total Run Time: <%=@run.end_time.hour - @run.start_time.hour%>hr <%=@run.end_time.min-@run.start_time.min%>min <%=@run.end_time.min - @run.start_time.min%>sec</tr>
-        </div><br/><br/><br/>
+  <div class="card-panel grey lighten-2 col s4" style="margin: 10px">
+    <tr><h4>Run Details</h4></tr><br/><br/>
+    <tr>Run ID: <%=@run[:id]%></tr><br/><br/>
+    <tr>Start Time: <%=@run.start_time%></tr><br/><br/>
+    <tr>Distance: <%=@run.distance%></tr><br/><br/>
+    <tr>End Time: <%=@run.end_time%></tr><br/><br/>
+    <tr>Total Run Time: <%=@run.end_time.hour - @run.start_time.hour%>hr <%=@run.end_time.min-@run.start_time.min%>min <%=@run.end_time.min - @run.start_time.min%>sec</tr>
+  </div><br/><br/><br/>
 
 <h2>Comments...</h2>
 

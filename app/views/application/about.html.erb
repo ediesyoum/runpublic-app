@@ -178,6 +178,15 @@ input[name="controls"] {display: none;}
     <th>10:03:48</th>
     <th>6.1</th>
     <th>01 hr 03 min 48sec</th>
+
+            <table class="striped bordered">
+                <% @runs.each do |run| %>
+                <%= render index %>
+                     which is the same as
+                <%= render partial:"runs/index", locals:{runs:index} %>
+               <% end %>
+              </tr>
+            </table>
   </tr>
 
   <tr
