@@ -1,6 +1,6 @@
 # Runpublic
 
-<img src="https://github.com/ediesyoum/runpublic-app/blob/master/app/assets/images/wireframe.png" />
+<img src="https://github.com/ediesyoum/runpublic-app/blob/master/app/assets/images/wireframe2.png" />
 
 ## Technical
 
